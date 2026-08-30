@@ -946,7 +946,10 @@ ul {
 
 /* End Work Steps */
 /* Start Events */
-
+.events {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
 /* End Events */
 /* Start Pricing */
 
