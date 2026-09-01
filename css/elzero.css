@@ -950,6 +950,9 @@ ul {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
 }
+.events .container img {
+max-width: 100%;
+}
 /* End Events */
 /* Start Pricing */
 
