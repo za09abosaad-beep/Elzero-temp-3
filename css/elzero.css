@@ -954,6 +954,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  text-align: center;
 }
 .events .container img {
   max-width: 450px;
@@ -967,13 +968,14 @@ ul {
   flex: 1;
 }
 .events .container .info .time {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+       display: flex;
+    align-items: center;
+    margin: 20px auto;
+    gap: 10px;
+    justify-content: center;
 }
 .events .container .info .time .unit {
-  border: 1px solid #d4d4d4;
+     border: 1px solid #d4d4d4;
   border-radius: 6px;
   text-align: center;
   width: 80px;
@@ -983,11 +985,11 @@ ul {
   border-color: var(--main-color);
 }
 .events .container .info .time .unit span:first-child {
-  display: block;
-  font-size: 30px;
-  font-weight: bold;
-  color: var(--main-color);
-  padding: 10px;
+     font-size: 35px;
+    padding: 15px;
+    color: var(--main-color);
+    font-weight: bold;
+    display: block;
 }
 .events .container .info .time .unit span:last-child {
   display: block;
@@ -1007,11 +1009,10 @@ ul {
   font-size: 30px;
 }
 .events .container .info .description {
-  text-align: center;
-  color: #777;
-  line-height: 1.7;
-  font-size: 20px;
-  margin: 10px 0 30px;
+      text-align: center;
+    line-height: 1.7;
+    font-size: 19px;
+    color: #777;
 }
 .events .container .subscribe {
   width: 100%;
@@ -1060,9 +1061,10 @@ ul {
 .events .container .subscribe form input[type="submit"] {
   outline: none;
   border: none;
+  font-weight: bold;
   background-color: var(--main-color);
   border-radius: 50px;
-  padding: 18px;
+  padding: 20px;
   color: white;
   cursor: pointer;
 }
