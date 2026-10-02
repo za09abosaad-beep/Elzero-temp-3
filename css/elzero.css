@@ -968,14 +968,14 @@ ul {
   flex: 1;
 }
 .events .container .info .time {
-       display: flex;
-    align-items: center;
-    margin: 20px auto;
-    gap: 10px;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
+  justify-content: center;
 }
 .events .container .info .time .unit {
-     border: 1px solid #d4d4d4;
+  border: 1px solid #d4d4d4;
   border-radius: 6px;
   text-align: center;
   width: 80px;
@@ -985,11 +985,11 @@ ul {
   border-color: var(--main-color);
 }
 .events .container .info .time .unit span:first-child {
-     font-size: 35px;
-    padding: 15px;
-    color: var(--main-color);
-    font-weight: bold;
-    display: block;
+  font-size: 35px;
+  padding: 15px;
+  color: var(--main-color);
+  font-weight: bold;
+  display: block;
 }
 .events .container .info .time .unit span:last-child {
   display: block;
@@ -1009,10 +1009,10 @@ ul {
   font-size: 30px;
 }
 .events .container .info .description {
-      text-align: center;
-    line-height: 1.7;
-    font-size: 19px;
-    color: #777;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 19px;
+  color: #777;
 }
 .events .container .subscribe {
   width: 100%;
@@ -1081,7 +1081,133 @@ ul {
 }
 /* End Events */
 /* Start Pricing */
+.pricing {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--section-background);
+}
+.pricing .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.pricing .container .box {
+  background-color: white;
+  position: relative;
+  box-shadow:
+    rgba(0, 0, 0, 0.13) 0px 12px 20px 0px,
+    rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+  text-align: center;
+  z-index: 1;
+}
+.pricing .container .box::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(246, 246, 246);
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 0%;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.pricing .container .box:hover::after {
+  width: 100%;
+}
+.pricing .container .box::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(246, 246, 246);
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 0%;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.pricing .container .box:hover::before {
+  width: 100%;
+}
+.pricing .container .popular {
+  top: -20px;
+}
+.pricing .container .popular .label {
+  writing-mode: vertical-lr;
+  position: absolute;
+  right: 20px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 10px 30px 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.pricing .container .popular .label::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px;
+  border-color: transparent transparent white transparent;
+}
+.pricing .container .box .title {
+  text-align: center;
+  font-size: 25px;
+  margin: 30px 0;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.pricing .container .box img {
+  width: 80px;
+  margin: 0 0 30px;
+}
+.pricing .box .price {
+  margin-bottom: 20px;
+}
+.pricing .container .box .price .amount {
+  display: block;
+  font-size: 60px;
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.pricing .container .box .price .time {
+  display: block;
+  color: #777;
+}
+.pricing .container .box ul li {
+  text-align: left;
+}
+.pricing .container .box ul li {
+  padding: 20px;
+  border-top: 1px solid #eee;
 
+  position: relative;
+}
+.pricing .container .box ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  margin-right: 10px;
+  font-weight: 900;
+  color: var(--main-color);
+}
+.pricing .container .box a {
+  display: block;
+  margin: 30px auto 40px;
+  padding: 15px 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
+  width: fit-content;
+  color: var(--main-color);
+  font-weight: bold;
+  transition: var(--main-transition);
+}
+.pricing .container .box a:hover {
+  color: white;
+  background-color: var(--main-color);
+}
 /* End Pricing */
 /* Start Animation */
 @keyframes up-and-down {
